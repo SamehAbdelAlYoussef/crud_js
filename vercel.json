@@ -1,0 +1,15 @@
+{
+    "builds": [
+      {
+        "src": "crud_js/index.html",
+        "use": "@vercel/static"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/",
+        "dest": "/crud_js/index.html"
+      }
+    ]
+  }
+  

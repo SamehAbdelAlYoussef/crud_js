@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crud_system</title>
+    <link rel="stylesheet" href="crud.css">
+</head>
+<!-- intern on language programning is js -->
+<body class="bodyes">
+    <div class="crud">
+        <!-- titels is projects -->
+        <div class="header">
+            <h1 class="title">crud</h1>
+            <p class="end_titele">product mangment syatem.</p>
+        </div>
+        <!-- inpute  is projects -->
+        <div class="input">
+            <input type="text" placeholder="titel" id="name_input">
+            <div class="pricess">
+            <input type="number" onkeyup="gettotale()" placeholder="price" id="price_input">
+            <input type="number" onkeyup="gettotale()" placeholder="Taxcis" id="Taxcis_input">
+            <input type="number" onkeyup="gettotale()" placeholder="ads" id="ads_input">
+            <input type="number" onkeyup="gettotale()" placeholder="discound" id="discound_input">
+            <small class="total">total: <span class="amounts"></span></small>
+           </div>
+           <input type="number" placeholder="count" id="count_input">
+           <input type="text" placeholder="catgoorey" id="catgoorey_input">
+            <button id="create">create</button>
+           <input  onkeyup="search_data(this.value)" type="text"  placeholder="search" id="search_input">
+            <div class="search">
+                <button  onclick="search_focus(this.id)" id="titele_search" >search by titele</button>
+                <button id="catgoorey_search" onclick="search_focus(this.id)">search by catgoorey</button>
+            </div>
+        </div>
+        <!-- outpute is projects -->
+        <div class="output">
+            <div id="deletALL"> </div>
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>titel</th>
+                    <th>price</th>
+                    <th>taxcis</th>
+                    <th>ads</th>
+                    <th>discound</th>
+                    <th>totale</th>
+                    <th>catgoorey</th>
+                    <th>update</th>
+                    <th>delet</th>
+                </tr>
+                <tbody class="data_body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+   <script src="crud.js"></script>
+</body>
+</html>
